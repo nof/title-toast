@@ -1,11 +1,12 @@
 (function() {
-  var dialog = document.createElement("dialog");
-  dialog.innerHTML = document.title;
-  document.body.appendChild(dialog);
+  var dialog = $("<dialog>", {id: 'title-toast', text: document.title });
+  $("body").append(dialog);
+})();
 
+function showTitleToast() {
+  var dialog = $("#title-toast")[0];
   dialog.showModal();
   setTimeout(function() {
     dialog.close();
-    document.body.removeChild(dialog);
   }, 1000);
-})();
+}
