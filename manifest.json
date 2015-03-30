@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Title Toast",
+  "version": "1",
+  "description": "Title Toast",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs", "<all_urls>"
+  ]
+}
