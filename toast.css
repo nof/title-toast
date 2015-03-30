@@ -1,0 +1,14 @@
+#title-toast {
+  font-size: initial;
+  line-height: initial;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+#title-toast::backdrop {
+  background-color: rgba(0, 0, 0, 0.0);
+}
